@@ -15,7 +15,7 @@ class KittensController < ApplicationController
   def create
     @kitten = Kitten.create(kitten_params)
     #byebug
-    redirect_to kittens_path
+    redirect_to kitten_path(@kitten)
   end
 
   def kitten_params
