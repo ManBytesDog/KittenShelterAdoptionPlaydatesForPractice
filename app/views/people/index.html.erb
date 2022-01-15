@@ -1,9 +1,9 @@
 <H1>This is my people index page</h1>
 
 <ul>
-  <% @people.each do | p | %>
+  <% @people.each do | person | %>
   
-    <li><%= link_to p.name %></li>
+    <li> <%= link_to person.name, person_path(person) %> </li>
   
   <% end %>
 </ul>

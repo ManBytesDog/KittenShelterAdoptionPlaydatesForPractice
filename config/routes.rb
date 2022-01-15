@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   get '/kittens/:id', to: 'kittens#show', as: 'kitten'
   post '/kittens', to: 'kittens#create'
 
-  get '/people', to: 'people#index', as: "people"
+  get '/people', to: 'people#index', as: 'people'
+  get '/people/:id', to: 'people#show', as: 'person'
   
   
 
