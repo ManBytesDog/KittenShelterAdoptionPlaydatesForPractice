@@ -1,0 +1,10 @@
+<h1>This is my Person Show page</h1>
+<hr/>
+<h2> <%= @person.name %> </h2>
+<br/>
+<h3> These are <%= @person.name %>'s playdates in the future: </h3>
+  <% @person.playdates.each do | pd | %>
+    <%= pd.date %> <%= pd.length_of_time %> minutes
+    <br/>
+    <br/>
+  <% end %>
