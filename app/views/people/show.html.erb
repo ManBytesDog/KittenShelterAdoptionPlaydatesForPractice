@@ -4,7 +4,6 @@
 <br/>
 <h3> These are <%= @person.name %>'s playdates in the future: </h3>
   <% @person.playdates.each do | pd | %>
-    <%= pd.date %> <%= pd.length_of_time %> minutes
-    <br/>
+   <li> <%= pd.date %> <%= pd.length_of_time %> minutes with <%= pd.kitten.name %> </li>
     <br/>
   <% end %>
