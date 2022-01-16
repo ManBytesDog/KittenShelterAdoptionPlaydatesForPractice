@@ -12,6 +12,9 @@ Rails.application.routes.draw do
 
   get '/people', to: 'people#index', as: 'people'
   get '/people/:id', to: 'people#show', as: 'person'
+
+  get '/playdates/new', to: 'playdate#new'
+  post '/playedates', to: 'playdates#create'
   
   
 
