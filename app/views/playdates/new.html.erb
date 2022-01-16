@@ -1,0 +1,13 @@
+<h1>New Playdate Form Page</h1>
+<hr>
+<%= form_for @playdate do | f | %>
+<%= f.label :date %> ('mm-dd-yyyy'):
+<%= f.text_field :date %>
+<br/>
+<br/>
+<%= f.label :time%> (in minutes):
+<%= f.number_field :length_of_time %>
+<br/>
+<br/>
+<%= f.submit %> 
+<% end %>
